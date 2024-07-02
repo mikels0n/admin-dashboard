@@ -17,6 +17,8 @@ body {
 .header {
     background-color: red;
     grid-area: 1 / 2 / 2 / 4;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 .content {
@@ -25,6 +27,8 @@ body {
 
 .trends {
     background-color: blue;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 .logo {
