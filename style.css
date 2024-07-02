@@ -5,7 +5,7 @@ body {
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 200px 4fr 1fr;
+    grid-template-columns: 300px 4fr 1fr;
     grid-template-rows: 200px 1fr;
 }
 
@@ -28,13 +28,30 @@ body {
 }
 
 .logo {
+    padding-top: 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 img.dashboard {
     width: 2em;
     height: 2em;
+    padding-left: 20px;
 }
 
+.nav-btn img, .setting-btn img{
+    width: 2em;
+    height: 2em;
+    padding-left: 20px;
+}
+
+.nav-btn div, .setting-btn div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-btn, .setting-btn {
+    padding-top: 20px;
+}
