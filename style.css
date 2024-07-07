@@ -1,15 +1,20 @@
+
+
 body {
+    font-family: Nunito;
     margin: 0;
 }
 
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 300px 4fr 1fr;
-    grid-template-rows: 200px 1fr;
+    grid-template-columns: 300px minmax(300px, 4fr) 300px;
+    grid-template-rows: 150px 1fr;
 }
 
 .sidebar {
+    font-weight: 500;
+    font-size: 1.3em;
     background-color: yellow;
     grid-area: 1 / 1 / 3 / 2;
 }
@@ -32,22 +37,20 @@ body {
 }
 
 .logo {
-    padding-top: 20px;
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-img.dashboard {
+.nav-btn img, .setting-btn img, img.dashboard {
     width: 2em;
     height: 2em;
-    padding-left: 20px;
+    margin-left: 25px;
 }
 
-.nav-btn img, .setting-btn img{
+.search-icon {
     width: 2em;
     height: 2em;
-    padding-left: 20px;
 }
 
 .nav-btn div, .setting-btn div{
@@ -56,6 +59,27 @@ img.dashboard {
     gap: 10px;
 }
 
-.nav-btn, .setting-btn {
-    padding-top: 20px;
+.nav-btn, .setting-btn, .logo {
+    margin-top: 30px;
 }
+
+.first-header {
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+#search {
+    height: 2em;
+    border-radius: 20px;
+    margin-left: 25px;
+    width: 500px;
+    border: 0;
+    padding-left: 20px;
+}
+
+#search:focus {
+    outline: none;
+    padding-left: 20px;
+}
+
