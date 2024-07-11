@@ -27,7 +27,8 @@ body {
 }
 
 .content {
-    background-color: green
+    background-color: green;
+    padding: 25px;
 }
 
 .trends {
@@ -133,4 +134,43 @@ button {
     gap: 25px;
 }
 
+.tweets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.tweet {
+    display: flex;
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    flex-direction: column;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 0;
+    border-radius: 10px;
+    border-left: solid 10px;
+}
+
+.tweet-caption {
+    font-weight: 900;
+}
+
+.tweet-content {
+    font-size: 0.8em;
+}
+
+.tweet-btns {
+    margin-left: auto;
+    display: flex;
+    margin-top: auto;
+    gap: 10px;
+}
+
+.tweet-btns > img {
+    width: 2em;
+    height: 2em;
+}
 
